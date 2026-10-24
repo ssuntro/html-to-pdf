@@ -1,0 +1,26 @@
+# Packaged extension builds
+*.zip
+*.crx
+*.pem
+dist/
+build/
+
+# Generated PDFs from testing
+*.pdf
+
+# Node (if tooling is added later)
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*~
+
+# Env / secrets
+.env
+.env.*
