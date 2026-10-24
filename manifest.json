@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Page to PDF",
+  "version": "1.2.0",
+  "description": "One click: save the current page (e.g. a Medium article) as a clean, text-selectable PDF.",
+  "permissions": ["activeTab", "scripting", "debugger", "downloads", "storage"],
+  "background": { "service_worker": "background.js" },
+  "action": {
+    "default_title": "Save page as PDF (Alt+Shift+P)",
+    "default_icon": { "16": "icons/icon16.png", "32": "icons/icon32.png", "48": "icons/icon48.png" }
+  },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": { "default": "Alt+Shift+P", "mac": "Alt+Shift+P" },
+      "description": "Save current page as PDF"
+    }
+  },
+  "options_page": "options.html",
+  "icons": { "16": "icons/icon16.png", "48": "icons/icon48.png", "128": "icons/icon128.png" }
+}

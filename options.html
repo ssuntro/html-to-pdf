@@ -1,0 +1,27 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Page to PDF – Options</title>
+<style>
+body{font:14px system-ui,"Sarabun",sans-serif;margin:24px;max-width:460px;color:#12171c}
+label{display:flex;gap:8px;align-items:center;margin:10px 0}
+small{color:#5b6670;display:block;margin:-6px 0 10px 0}
+#ok{color:#1e6b34;margin-left:8px}
+</style></head>
+<body>
+<h2>Page to PDF</h2>
+<label>Paper <select id="paper"><option>A4</option><option>Letter</option></select></label>
+<label><input type="checkbox" id="landscape"> Landscape</label>
+<label>Page width
+  <select id="width">
+    <option value="1">1× (paper width, large text)</option>
+    <option value="1.5">1.5×</option>
+    <option value="2">2× (desktop layout)</option>
+    <option value="2.5">2.5×</option>
+    <option value="3">3× (very wide, small text)</option>
+  </select></label>
+<small>Wider = the page is laid out like a bigger screen, then shrunk to fit the paper.</small>
+<label><input type="checkbox" id="clean"> Hide sticky bars, popups, side rails</label>
+<label><input type="checkbox" id="background"> Print background colours</label>
+<label><input type="checkbox" id="askWhere"> Ask where to save each time</label>
+<button id="save">Save</button><span id="ok"></span>
+<script src="options.js"></script>
+</body></html>
