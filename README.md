@@ -1,4 +1,6 @@
 # Page to PDF
+![page-to-pdf-logo](https://github.com/ssuntro/html-to-pdf/blob/main/icons/icon128.png)
+
 
 A Chrome extension that saves the current page (a Medium article, a Confluence page, a Jira ticket…) as a clean, text-selectable PDF in one click.
 
